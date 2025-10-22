@@ -24,7 +24,7 @@ A complete inventory and order management application built with **Next.js 14**,
 3. **Set up environment variables**
    ```bash
    # Create and .env file and add:
-   'DATABASE_URL="file:./.data/dev.db"'
+   DATABASE_URL="file:./.data/dev.db"
    ```
 
 4. **Initialize the database**
