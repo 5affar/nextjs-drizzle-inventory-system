@@ -2,42 +2,48 @@
 
 A complete inventory and order management application built with **Next.js 14**, **TypeScript**, **Drizzle ORM**, and **SQLite**.
 
-## 🚀 Quick Start
+## Getting Started
 
 ### Prerequisites
-- Node.js 18+ and pnpm
-- SQLite (included) or PostgreSQL
+- Node.js 18 or higher
+- pnpm package manager (if you don't have it: `npm install -g pnpm`)
 
-### Installation
+### Setup Instructions
 
-1. **Clone and Install**
+1. **Clone the repository**
    ```bash
    git clone <repository-url>
    cd "Inventory & Orders Mini-App (Next.js + Drizzle)"
+   ```
+
+2. **Install dependencies**
+   ```bash
    pnpm install
    ```
 
-2. **Environment Setup**
+3. **Set up environment variables**
    ```bash
-   # Create .env file
+   # Create .env file with database configuration
    echo 'DATABASE_URL="file:./.data/dev.db"' > .env
    ```
 
-3. **Database Setup**
+4. **Initialize the database**
    ```bash
-   # Generate migration files
+   # Generate database schema
    pnpm drizzle:generate
    
-   # Apply migrations to database
+   # Create database and apply migrations
    pnpm drizzle:migrate
    ```
 
-4. **Start Development Server**
+5. **Start the development server**
    ```bash
    pnpm dev
    ```
+   
+   The application will be available at http://localhost:3000
 
-5. **Run Tests**
+### Running Tests
    ```bash
    # Run all tests
    pnpm test:run
