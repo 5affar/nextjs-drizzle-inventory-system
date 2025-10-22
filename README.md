@@ -101,8 +101,5 @@ Create a `.env` file in the root directory:
 ```bash
 # SQLite database (default)
 DATABASE_URL="file:./.data/dev.db"
-
-# For PostgreSQL (optional)
-# DATABASE_URL="postgresql://username:password@localhost:5432/database"
 ```
 
