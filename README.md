@@ -17,7 +17,13 @@ A complete inventory and order management application built with **Next.js 14**,
    pnpm install
    ```
 
-2. **Database Setup**
+2. **Environment Setup**
+   ```bash
+   # Create .env file
+   echo 'DATABASE_URL="file:./.data/dev.db"' > .env
+   ```
+
+3. **Database Setup**
    ```bash
    # Generate migration files
    pnpm drizzle:generate
@@ -26,12 +32,12 @@ A complete inventory and order management application built with **Next.js 14**,
    pnpm drizzle:migrate
    ```
 
-3. **Start Development Server**
+4. **Start Development Server**
    ```bash
    pnpm dev
    ```
 
-4. **Run Tests**
+5. **Run Tests**
    ```bash
    # Run all tests
    pnpm test:run
@@ -83,5 +89,14 @@ pnpm test:ui
 ```
 
 ## 📊 Environment Variables
-SQLite is used by default with no configuration required.
+
+Create a `.env` file in the root directory:
+
+```bash
+# SQLite database (default)
+DATABASE_URL="file:./.data/dev.db"
+
+# For PostgreSQL (optional)
+# DATABASE_URL="postgresql://username:password@localhost:5432/database"
+```
 
