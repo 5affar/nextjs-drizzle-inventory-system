@@ -12,7 +12,7 @@ A complete inventory and order management application built with **Next.js 14**,
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/5affar/nextjs-drizzle-inventory-system
    cd "Inventory & Orders Mini-App (Next.js + Drizzle)"
    ```
 
