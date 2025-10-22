@@ -11,9 +11,9 @@
     "test": "vitest",
     "test:ui": "vitest --ui",
     "test:run": "vitest run",
-    "drizzle:generate": "drizzle-kit generate",
-    "drizzle:migrate": "drizzle-kit push",
-    "drizzle:studio": "drizzle-kit studio"
+    "drizzle:generate": "dotenv -e .env -- drizzle-kit generate",
+    "drizzle:migrate": "dotenv -e .env -- drizzle-kit push",
+    "drizzle:studio": "dotenv -e .env -- drizzle-kit studio"
   },
   "dependencies": {
     "@libsql/client": "^0.15.15",
